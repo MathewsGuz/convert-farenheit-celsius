@@ -12,5 +12,18 @@ and open the template in the editor.
     </head>
     <body>
         <div>TODO write content</div>
+        <div>
+            Degrees: <input id="number" type="text" name="number"><br>
+        </div>
+        <div>
+            <button type="button" onclick="ConvertControllerModule.getFarenheit()">Convert to Farenheit</button>
+            <button type="button" onclick="ConvertControllerModule.getCelsius()">Convert to Celsius</button>
+        </div>
+        <div>
+            <p id="result"></p>
+        </div>
+        <script src="js/ConvertController.js"></script>
+        <script src="js/ConvertRestController.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     </body>
 </html>
