@@ -21,6 +21,26 @@ and open the template in the editor.
         </div>
         <div>
             <p id="result"></p>
+        </div><br>
+        <div>
+            Para utilizar la aplicacion desde la pagina ingresas un valor (que son los grados que se desea convertir)
+            y se debe dar clic en el boton que corresponda al tipo de temperatura al cual se desea convertir
+        </div><br><br>
+        <div>
+            Para conectarse desde el browser ingresar a la url https://convert-farenheit-celsius.herokuapp.com/convert/toFarenheit/{value} 
+            donde value es el valor en grados Celsius a convertir en Farenheit
+            y la url https://convert-farenheit-celsius.herokuapp.com/convert/toCelsius/{value}
+            donde value es el valor en grados Farenheit a convertir en Celsius
+            ejemplos:
+            https://convert-farenheit-celsius.herokuapp.com/convert/toCelsius/50
+            https://convert-farenheit-celsius.herokuapp.com/convert/toFarenheit/10
+            el output esta en formato json y contiene los grados en ambos tipos
+        </div><br>
+        <div>
+            Para conectarse desde java se debe invocar los metodos de la clase ConversionServicesImpl
+            convertCelsiusToFarenheit(float value) y convertFarenheitToCelsius(float value)
+            donde value es el valor en grados a convertir
+            
         </div>
         <script src="js/ConvertController.js"></script>
         <script src="js/ConvertRestController.js"></script>
